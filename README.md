@@ -44,4 +44,4 @@ electron-app/
 
 ## Credits
 
-Cursor AI - Code --- PePe and ?! - Idea  
+Cursor AI - Code
