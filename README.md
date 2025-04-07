@@ -11,10 +11,6 @@ A modern Electron-based Minecraft multitool with beautiful animations and glow e
 - Notification system
 - Responsive design
 
-## Screenshots
-
-(Screenshots will be added after the first run)
-
 ## Installation
 
 ### Prerequisites
@@ -24,37 +20,13 @@ A modern Electron-based Minecraft multitool with beautiful animations and glow e
 
 ### Setup
 
-1. Clone this repository
-2. Navigate to the project directory
-3. Install dependencies:
+1. Download the code.
+2. Extract the code if needed.
+3. Do following.
 
 ```bash
-npm install
+Open start.bat
 ```
-
-## Running the Application
-
-### Development Mode
-
-```bash
-npm run dev
-```
-
-### Production Mode
-
-```bash
-npm start
-```
-
-## Building the Application
-
-To build the application for distribution:
-
-```bash
-npm run build
-```
-
-The built application will be available in the `dist` directory.
 
 ## Project Structure
 
