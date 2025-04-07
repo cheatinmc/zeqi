@@ -72,8 +72,5 @@ electron-app/
 
 ## Credits
 
-Created by PePe and !?
-
-## License
-
-MIT 
+Cursor AI - Code
+PePe and ?! - Idea
