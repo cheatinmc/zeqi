@@ -1,0 +1,2 @@
+# zeqi
+lc launcher reworked
