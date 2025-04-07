@@ -1,0 +1,31 @@
+{
+  "name": "zeqi-minecraft-multitool",
+  "version": "1.0.0",
+  "description": "Zeqi - A Minecraft Multitool with modern UI and animations",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dev": "electron . --dev"
+  },
+  "author": "PePe and !?",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  },
+  "build": {
+    "appId": "com.zeqi.minecraftmultitool",
+    "productName": "Zeqi - Minecraft Multitool",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/icon.ico"
+    }
+  }
+} 

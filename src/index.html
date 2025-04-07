@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeqi - A Minecraft Multitool</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Custom Titlebar -->
+    <div class="titlebar">
+      <div class="titlebar-title">
+        <img src="assets/logo.svg" alt="Logo" class="logo">
+        <span>Zeqi</span>
+      </div>
+      <div class="titlebar-controls">
+        <button class="titlebar-btn" id="minimize-btn">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button class="titlebar-btn" id="maximize-btn">
+          <i class="fas fa-square"></i>
+        </button>
+        <button class="titlebar-btn close" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="title">Zeqi</h1>
+        <p class="subtitle">A Minecraft Multitool</p>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="menu-container">
+        <!-- Main Menu -->
+        <div class="menu active" id="main-menu">
+          <h2 class="menu-title">Main Menu</h2>
+          <div class="button-grid">
+            <button class="menu-button" data-action="launcher-menu">
+              <i class="fas fa-rocket"></i>
+              <span>Minecraft Launchers</span>
+            </button>
+            <button class="menu-button" data-action="hack-client-menu">
+              <i class="fas fa-code"></i>
+              <span>Hack Clients</span>
+            </button>
+            <button class="menu-button" data-action="config-menu">
+              <i class="fas fa-cog"></i>
+              <span>Configs</span>
+            </button>
+            <button class="menu-button" data-action="alt-menu">
+              <i class="fas fa-user-secret"></i>
+              <span>Alts</span>
+            </button>
+            <button class="menu-button" data-action="vpn">
+              <i class="fas fa-shield-alt"></i>
+              <span>Softether VPN</span>
+            </button>
+            <button class="menu-button" data-action="exit">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Exit</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Launcher Menu -->
+        <div class="menu" id="launcher-menu">
+          <h2 class="menu-title">Minecraft Launchers</h2>
+          <div class="button-list">
+            <button class="menu-button" data-action="launch-tlauncher">
+              <i class="fas fa-play"></i>
+              <span>Launch TLauncher</span>
+            </button>
+            <button class="menu-button back" data-action="back-to-main">
+              <i class="fas fa-arrow-left"></i>
+              <span>Back to Main Menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hack Client Menu -->
+        <div class="menu" id="hack-client-menu">
+          <h2 class="menu-title">Hack Clients</h2>
+          <div class="button-list">
+            <button class="menu-button" data-action="open-url" data-url="https://liquidbounce.net">
+              <i class="fas fa-download"></i>
+              <span>Liquidbounce</span>
+            </button>
+            <button class="menu-button" data-action="open-url" data-url="https://github.com/randomguy3725/MoonLight/releases/tag/1.0">
+              <i class="fas fa-download"></i>
+              <span>MoonLight</span>
+            </button>
+            <button class="menu-button" data-action="open-url" data-url="https://github.com/shxp3/CrossSine">
+              <i class="fas fa-download"></i>
+              <span>CrossSine</span>
+            </button>
+            <button class="menu-button" data-action="open-url" data-url="https://github.com/tri11iona1re/cryptix-client/releases/tag/1.4">
+              <i class="fas fa-download"></i>
+              <span>Cryptix</span>
+            </button>
+            <button class="menu-button back" data-action="back-to-main">
+              <i class="fas fa-arrow-left"></i>
+              <span>Back to Main Menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Config Menu -->
+        <div class="menu" id="config-menu">
+          <h2 class="menu-title">Configurations</h2>
+          <div class="button-list">
+            <button class="menu-button" data-action="open-url" data-url="https://discord.gg/nGbQ227NK9">
+              <i class="fab fa-discord"></i>
+              <span>Join Discord Server</span>
+            </button>
+            <button class="menu-button" data-action="open-minecraft-versions">
+              <i class="fas fa-folder-open"></i>
+              <span>Open Minecraft Versions</span>
+            </button>
+            <button class="menu-button" data-action="open-minecraft-mods">
+              <i class="fas fa-folder-open"></i>
+              <span>Open Minecraft Mods</span>
+            </button>
+            <button class="menu-button back" data-action="back-to-main">
+              <i class="fas fa-arrow-left"></i>
+              <span>Back to Main Menu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Alt Menu -->
+        <div class="menu" id="alt-menu">
+          <h2 class="menu-title">Alts</h2>
+          <div class="button-list">
+            <button class="menu-button" data-action="open-url" data-url="https://nicegen.sellsn.io">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Open Alt Website</span>
+            </button>
+            <button class="menu-button back" data-action="back-to-main">
+              <i class="fas fa-arrow-left"></i>
+              <span>Back to Main Menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© 2025 Cursor AI • All rights reserved</p>
+      </div>
+    </div>
+
+    <!-- Theme Selector -->
+    <div class="theme-selector">
+      <button class="theme-toggle">
+        <i class="fas fa-palette"></i>
+      </button>
+      <div class="theme-dropdown">
+        <div class="theme-option" data-theme="default">Default</div>
+        <div class="theme-option" data-theme="dark">Dark</div>
+        <div class="theme-option" data-theme="light">Light</div>
+        <div class="theme-option" data-theme="purple">Purple</div>
+        <div class="theme-option" data-theme="blue">Blue</div>
+        <div class="theme-option" data-theme="green">Green</div>
+        <div class="theme-option" data-theme="red">Red</div>
+        <div class="theme-option" data-theme="orange">Orange</div>
+        <div class="theme-option" data-theme="cyberpunk">Cyberpunk</div>
+        <div class="theme-option" data-theme="retro">Retro</div>
+      </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html> 
